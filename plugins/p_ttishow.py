@@ -27,7 +27,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
+                InlineKeyboardButton('contact', url=f'https://t.me/rajat_support_bot')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
