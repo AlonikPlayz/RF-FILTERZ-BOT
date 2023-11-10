@@ -19,9 +19,9 @@ async def share_text(client, message):
         input_text = reply.text or reply.caption
     else:
         await message.reply_text(
-            text=f"**Notice:**\n\n1. Reply Any Messages.\n2. No Media Support\n\n**Any Question Join Support Chat**",                
+            text=f"**Notice:**\n\n1. Reply Any Messages.\n2. No Media Support\n\n**Any Question contact me**",                
             reply_to_message_id=reply_id,               
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Updates channel", url=f"https://t.me/+6aJCshJ_F2tiMTk1")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("contact", url=f"https://t.me/rajat_support_bot")]])
             )                                                   
         return
     await message.reply_text(
